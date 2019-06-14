@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Make sure Image Magick is installed on your machine:
+Ubuntu: apt-get install imagemagick
+MacOS: brew install imagemagick
 
-Things you may want to cover:
+# Make sure Rails is installed on your machine:
+sudo gem install rails
 
-* Ruby version
+# Pull in the included project bundles:
+bundle install
 
-* System dependencies
+# Run the DB migrations:
+bin/rails db:migrate RAILS_ENV=development
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Host the project locally:
+bin/rails server
